@@ -27,6 +27,23 @@ nav {
     border-radius: 20px;
     margin-inline: 20px;
     font-weight: bold;
-    align-items: center;  
+    align-items: center;
     
+}
+
+/* মোবাইল ডিভাইসের জন্য রেসপন্সিভ কোড (স্ক্রিন সাইজ ৭৬৮ পিক্সেলের কম হলে কাজ করবে) */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* আইটেমগুলোকে পাশাপাশি থেকে নিচে নিচে নামিয়ে দিবে */
+        text-align: center;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid #333; /* অপশনাল: আইটেমগুলোর মাঝে হালকা বর্ডার */
+    }
+
+    .nav-links li a {
+        padding: 12px;
+    }
 }
